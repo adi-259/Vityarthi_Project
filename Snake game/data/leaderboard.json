@@ -1,0 +1,14 @@
+[
+  {
+    "player": "Player",
+    "score": 200,
+    "difficulty": "medium",
+    "foods_eaten": 5
+  },
+  {
+    "player": "Player",
+    "score": 120,
+    "difficulty": "medium",
+    "foods_eaten": 3
+  }
+]
