@@ -201,8 +201,11 @@ Possible future enhancements include:
 ## 👨‍💻 Author
 
 **Aditya Kumar**
+
 Reg No. 26BAI10114
+
 B.Tech CSE (AI & ML)  
+
 VIT Bhopal University
 
 ## 📚 Academic Project
