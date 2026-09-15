@@ -55,21 +55,6 @@ This project demonstrates several fundamental programming concepts:
 | Git | Version control |
 | GitHub | Project hosting |
 
-## 📁 Project Structure
-
-```text
-Snake game/
-│
-├── main.py
-├── README.md
-├── requirements.txt
-├── assets/
-│   └── ...
-└── other project files
-```
-
-> The exact file structure may vary depending on the final version of the project.
-
 ## 🚀 Installation
 
 ### 1. Install Python
@@ -216,15 +201,13 @@ Possible future enhancements include:
 ## 👨‍💻 Author
 
 **Aditya Kumar**
-
+Reg No. 26BAI10114
 B.Tech CSE (AI & ML)  
 VIT Bhopal University
 
 ## 📚 Academic Project
 
 Developed as part of the **Vityarthi Project – VIT Bhopal University**.
-
----
 
 ## 📄 License
 
