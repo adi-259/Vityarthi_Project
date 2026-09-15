@@ -1,186 +1,231 @@
-# Snake: Algorithm Arena
-### CSE1021 Problem Solving and Programming – Evaluated Course Project
-**Institution**: Vellore Institute of Technology (VIT Bhopal University)  
-**Academic Target**: VITyarthi Flipped Course Evaluation  
+# 🐍 Snake Algorithm Arena
 
----
+A Python-based Snake Game project developed as part of the **VIT Bhopal University Vityarthi Project**.
 
-## 1. Overview
-**Snake: Algorithm Arena** is an academically grounded, modular implementation of the classic Snake game designed specifically to demonstrate the core computational concepts taught in **CSE1021 (Problem Solving and Programming)**.
+The project combines the classic Snake game with algorithmic programming concepts such as game loops, conditional statements, iteration, functions, data structures, collision detection, and score management.
 
-Unlike typical monolithic script implementations, this project separates state management, vector input filtering, collision mathematics, set-based food placement, dynamic interval modulation, and file persistence into 10 cohesive, single-responsibility modules. The project features an explicit **Insertion Sort** algorithm for leaderboard management, deterministic pseudo-random seed testing, and dual interfaces: a hardware-accelerated 2D Pygame graphical interface and an interactive, zero-dependency ASCII Terminal CLI mode.
+## 🎮 Project Overview
 
----
+**Snake Algorithm Arena** is an interactive Snake game where the player controls a growing snake, collects food, earns points, and tries to achieve the highest possible score without colliding with the walls or itself.
 
-## 2. CSE1021 Syllabus Alignment
-Every core component maps directly to verified CSE1021 curriculum concepts:
+The project focuses on implementing programming concepts using **Python** while maintaining an interactive and user-friendly game experience.
 
-| Course Concept | Concrete Implementation in Project | File Reference |
-|---|---|---|
-| **Lists & Mutability** | Ordered snake body coordinates with O(1) head insertion and tail popping | `src/snake_engine.py` |
-| **Tuples** | Immutable 2D grid coordinates `(row, col)` and velocity vectors `(dr, dc)` | `src/config.py`, `src/game_state.py` |
-| **Dictionaries** | Game state bundles, difficulty settings, and serialized leaderboard entries | `src/config.py`, `src/game_state.py` |
-| **Control Flow & Selection** | Direction change filtering, 180-degree reversal prevention, state machine | `src/input_controller.py` |
-| **Set Operations & Comprehensions** | Free-cell candidate generation via set subtraction `all_cells - set(snake)` | `src/food_manager.py` |
-| **Pseudo-Random Generation (Unit IV)** | Deterministic food coordinate generation with reproducible seed support | `src/food_manager.py` |
-| **Sorting Algorithms** | Explicit in-place descending Insertion Sort for top-10 leaderboard ranking | `src/leaderboard.py` |
-| **File Handling & Defensive I/O** | Safe JSON persistence with automatic missing/corrupted file recovery | `src/persistence.py` |
+## ✨ Features
 
----
+- Classic Snake gameplay
+- Keyboard-based controls
+- Real-time movement
+- Food generation
+- Snake growth
+- Score tracking
+- Collision detection
+- Game-over system
+- Restart functionality
+- Increasing difficulty
+- Clean and interactive interface
+- Python-based implementation
 
-## 3. Key Features
-- **Dual Execution Interfaces**:
-  - **Graphical Mode**: 60 FPS hardware-accelerated 2D interface using `pygame-ce` with smooth snake segments, direction-aware eyes, pulsating food, HUD banner, and modal overlays.
-  - **Terminal CLI Mode (`--cli-mode`)**: Dependency-free ASCII board rendering directly in standard Windows PowerShell, CMD, or Linux terminal.
-- **Headless Automated Self-Test (`--self-test`)**:
-  - Terminal-based diagnostic command validating 13 discrete functional requirements without opening a GUI window.
-- **Deterministic Reproducibility (`--seed <INT>`)**:
-  - Enables repeatable gameplay and food sequences for deterministic testing and grading.
-- **Smart Reversal Prevention**:
-  - Automatically rejects instant 180-degree turns (e.g. pressing LEFT while moving RIGHT) to prevent unintended self-collisions.
-- **Dynamic Speed Progression**:
-  - Shortens tick intervals every 5 foods consumed to scale difficulty gradually up to safe hardware minimums.
-- **Persistent Hall of Fame**:
-  - Maintains top-10 historic runs ranked via explicit Insertion Sort in `data/leaderboard.json`.
+## 🧠 Concepts Used
 
----
+This project demonstrates several fundamental programming concepts:
 
-## 4. Technologies & Prerequisites
-- **Language**: Python 3.10+ (Tested on Python 3.14.7)
-- **Standard Libraries Used**: `sys`, `os`, `random`, `json`, `argparse`, `time`, `unittest`
-- **External Dependencies**: `pygame-ce>=2.5.0` (Optional for terminal CLI mode and self-test)
+- Variables and data types
+- Input and output
+- Conditional statements
+- Boolean expressions
+- `if`, `elif`, and `else`
+- `for` and `while` loops
+- `break` and `continue`
+- Functions
+- Lists and data structures
+- Random number generation
+- Coordinate systems
+- Collision detection
+- Event handling
+- Game loops
+- Modular programming
 
----
+## 🛠️ Technology Stack
 
-## 5. Installation & Setup
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| Pygame | Game development and graphics |
+| Random | Random food generation |
+| Git | Version control |
+| GitHub | Project hosting |
 
-### Clone or Download the Repository:
+## 📁 Project Structure
+
+```text
+Snake game/
+│
+├── main.py
+├── README.md
+├── requirements.txt
+├── assets/
+│   └── ...
+└── other project files
+```
+
+> The exact file structure may vary depending on the final version of the project.
+
+## 🚀 Installation
+
+### 1. Install Python
+
+Download and install Python from the official Python website.
+
+Make sure to enable:
+
+```text
+Add Python to PATH
+```
+
+during installation.
+
+### 2. Clone the Repository
+
 ```bash
-git clone https://github.com/{username}/snake-algorithm-arena.git
-cd snake-algorithm-arena
+git clone https://github.com/adi-259/Vityarthi_Project.git
 ```
 
-### (Recommended) Create and Activate a Virtual Environment:
-**On Windows (PowerShell):**
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+### 3. Enter the Project Folder
 
-**On macOS / Linux:**
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+cd Vityarthi_Project
+cd "Snake game"
 ```
 
-### Install Dependencies:
+### 4. Install Dependencies
+
+If the project contains `requirements.txt`:
+
 ```bash
 pip install -r requirements.txt
 ```
-*(Note: If running in pure terminal CLI mode `--cli-mode` or `--self-test`, no external pip packages are strictly required.)*
 
----
+If Pygame is required but isn't listed:
 
-## 6. Execution Commands
+```bash
+pip install pygame
+```
 
-### 1. Launch the Full Graphical Game (Default)
+### 5. Run the Game
+
 ```bash
 python main.py
 ```
-*Keyboard Controls*:
-- **Start / Select**: `ENTER` or `SPACE`
-- **Steer**: Arrow Keys (`UP`, `DOWN`, `LEFT`, `RIGHT`) or `W`, `A`, `S`, `D`
-- **Pause / Resume**: `P` or `SPACE`
-- **Difficulty Selection** (in Menu): `1` (Easy), `2` (Medium), `3` (Hard)
-- **Leaderboard**: `L`
-- **Restart Run** (on Game Over): `R`
-- **Return to Menu / Quit**: `M` / `ESC` / `Q`
 
-### 2. Run Interactive Terminal CLI Mode (Zero GUI dependencies)
-```bash
-python main.py --cli-mode
-```
-*Allows playing directly in your command line terminal.*
+## 🎮 Controls
 
-### 3. Run Headless Self-Test Suite
-```bash
-python main.py --self-test
-```
-*Executes all 13 requirement tests in memory and outputs a formatted pass/fail matrix.*
+| Key | Action |
+|---|---|
+| ↑ | Move Up |
+| ↓ | Move Down |
+| ← | Move Left |
+| → | Move Right |
+| Space | Pause/Resume |
+| R | Restart |
+| Esc | Exit |
 
-### 4. Run Deterministic Seeded Simulation
-```bash
-python main.py --seed 42
+> Controls may vary depending on the final implementation.
+
+## 🏆 Gameplay
+
+The objective is to collect as much food as possible while avoiding:
+
+1. Collision with the walls
+2. Collision with the snake's own body
+
+Every successful food collection increases the snake's length and score.
+
+The game ends when the snake collides with an obstacle.
+
+## 🔄 Basic Game Algorithm
+
+```text
+START
+  ↓
+Initialize game
+  ↓
+Create snake
+  ↓
+Generate food
+  ↓
+Start game loop
+  ↓
+Read keyboard input
+  ↓
+Move snake
+  ↓
+Check food collision
+  ↓
+Food collected?
+ ┌───────┴───────┐
+YES              NO
+ ↓                ↓
+Increase score    Continue
+Grow snake
+Generate food
+ └───────┬───────┘
+         ↓
+Check wall/body collision
+         ↓
+Collision?
+ ┌───────┴───────┐
+YES              NO
+ ↓                ↓
+Game Over       Continue loop
+ ↓
+Restart / Exit
+ ↓
+END
 ```
 
-### 5. Launch with Preset Difficulty
-```bash
-python main.py --difficulty hard
-```
+## 📊 Educational Objectives
+
+The project was developed to demonstrate how theoretical programming concepts can be converted into a functional software application.
+
+The project particularly demonstrates:
+
+- Problem solving
+- Algorithm design
+- Logical thinking
+- Python programming
+- Data structure usage
+- Event-driven programming
+- Software development workflow
+
+## 🔮 Future Improvements
+
+Possible future enhancements include:
+
+- Multiple difficulty levels
+- High-score leaderboard
+- Sound effects
+- Background music
+- Multiple maps
+- Power-ups
+- Different snake skins
+- Multiplayer mode
+- AI-controlled snake
+- Algorithm visualization
+- Save/load high scores
+
+## 👨‍💻 Author
+
+**Aditya Kumar**
+
+B.Tech CSE (AI & ML)  
+VIT Bhopal University
+
+## 📚 Academic Project
+
+Developed as part of the **Vityarthi Project – VIT Bhopal University**.
 
 ---
 
-## 7. Testing Suite
+## 📄 License
 
-The repository includes a comprehensive `unittest` test suite covering all units:
-```bash
-python -m unittest discover -s tests -p "test_*.py" -v
-```
-
-### Test Coverage Summary:
-- `tests/test_game_state.py`: Verifies initial variables, reset functionality, and summary dictionary exports.
-- `tests/test_movement.py`: Validates vector arithmetic, head advancement, tail maintenance, and growth.
-- `tests/test_collision.py`: Asserts wall collisions across all 4 grid boundaries and self-collision with tail-chase checks.
-- `tests/test_food.py`: Validates free-cell filtering, occupied cell avoidance, board-full win condition, and seed reproducibility.
-- `tests/test_score.py`: Verifies points multipliers, interval reduction thresholds, and clamping.
-- `tests/test_leaderboard.py`: Asserts descending order from Insertion Sort, duplicate score stability, and JSON persistence.
-
----
-
-## 8. Project Structure
-```
-snake-algorithm-arena/
-├── README.md                      # Project documentation and execution instructions
-├── statement.md                   # Problem statement, scope, target users, and features
-├── requirements.txt               # Dependency specification (pygame-ce)
-├── .gitignore                     # Git exclusion rules
-├── main.py                        # Application entry point and CLI controller
-├── src/
-│   ├── __init__.py                # Package indicator
-│   ├── config.py                  # Constants, dimensions, difficulty presets, and colors
-│   ├── game_state.py              # Central game state model and lifecycle transitions
-│   ├── input_controller.py        # Direction parsing and reversal prevention logic
-│   ├── snake_engine.py            # Movement calculations and body elongation
-│   ├── collision_engine.py        # Boundary limits and self-collision checks
-│   ├── food_manager.py            # Free-cell scanning and seeded PRNG food placement
-│   ├── score_manager.py           # Scoring multipliers and dynamic speed acceleration
-│   ├── leaderboard.py             # Explicit Insertion Sort and ranking management
-│   ├── persistence.py             # Defensive JSON read/write handlers
-│   └── renderer.py                # Dual rendering engines (Pygame GUI and ASCII CLI)
-├── tests/
-│   ├── __init__.py                # Test package indicator
-│   ├── test_game_state.py         # State lifecycle unit tests
-│   ├── test_movement.py           # Vector movement unit tests
-│   ├── test_collision.py          # Spatial collision tests
-│   ├── test_food.py               # Food generator and PRNG tests
-│   ├── test_score.py              # Score and interval scaling tests
-│   └── test_leaderboard.py        # Insertion sort and ranking tests
-├── data/
-│   └── leaderboard.json           # Persistent Hall of Fame data storage
-└── docs/
-    ├── architecture.svg           # High-level tiered architectural diagram
-    ├── workflow.svg               # Complete execution flowchart and state transitions
-    ├── use_case.svg               # Actor use case model
-    ├── class_diagram.svg          # Class, module, and component dependencies
-    ├── sequence_diagram.svg       # Single-tick runtime sequence diagram
-    ├── er_diagram.svg             # Storage schema and state model
-    ├── algorithms.md              # Pseudocode and asymptotic complexity analysis
-    └── CSE1021_Project_Report.md  # Formal 15-section academic report
-```
-
----
-
-## 9. Troubleshooting & Known Behaviors
-- **Pygame Not Installed?**: Run in terminal mode using `python main.py --cli-mode` or run `--self-test`. Both execute completely using Python standard library alone.
-- **Corrupted Leaderboard File?**: `src/persistence.py` automatically detects damaged or unreadable JSON files and re-initializes a clean list without crashing the game.
-- **Headless Environments**: When running in automated CI or headless virtual machines without an X11/Windows display server, invoke `--self-test` to inspect full functionality.
+This project is intended primarily for educational and academic purposes.
