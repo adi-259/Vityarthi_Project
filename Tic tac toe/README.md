@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-A simple two-player Tic Tac Toe game written in Python and designed as a CSE1021 project.
+A simple two-player Tic Tac Toe game written in Python as my project.
 
 ## How to run
 
@@ -12,13 +12,11 @@ python main.py
 
 The board positions are:
 
-```text
  1 | 2 | 3
 ---+---+---
  4 | 5 | 6
 ---+---+---
  7 | 8 | 9
-```
 
 - Player **X** starts.
 - Player **O** plays second.
@@ -29,7 +27,6 @@ The board positions are:
 
 ## Pseudocode - Game Loop
 
-```text
 START
 CREATE an empty 3 x 3 board
 SET current player to X
@@ -53,11 +50,9 @@ WHILE game is running
         DISPLAY invalid move
 END WHILE
 STOP
-```
 
 ## Flowchart
 
-```text
 START
   |
   v
@@ -88,7 +83,6 @@ Show winner  Board full?
           Show draw   Switch player
                          |
                          +----> Display board
-```
 
 ## Main Concepts Used
 
