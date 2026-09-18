@@ -9,7 +9,7 @@ Let's see what it provides and how i made this and how to use it.
 - Each quiz attempt randomly selects 10 unique questions using `random.sample()` module.
 - The selected question order changes after each run.
 - No question repeats within the same attempt.
-- Change `Quiz(question_count=10)` to any value for no. of question per attempt in `quiz.py`.
+- Change `Quiz(question_count=10)` to any value for no. of question per attempt in `main.py`.
 
 ## Run
 ```bash
