@@ -2,8 +2,6 @@
 
 Python Based Projects
 
-CSE1021 VITyarthi Evaluated Course Project
-
 VIT Bhopal University
 
 ---
@@ -14,7 +12,7 @@ Hi, I am **Aditya Kumar**, a first-year B.Tech CSE student at VIT Bhopal Univers
 <p align="center">
   <img src="https://www.image2url.com/r2/default/images/1789857328509-11b0d516-c1d7-4138-8c60-3e61c7258beb.jpg" width="170" alt="Aditya Kumar">
 </p>
-This repository contains the projects I made for my **CSE1021 VITyarthi course project**. I used Python to build the applications and tried to apply the programming concepts that I have learned in my course in actual working projects.
+This repository contains the projects I made for my CSE VITyarthi course project. I used Python to build the applications and tried to apply the programming concepts that I have learned in my course in actual working projects.
 
 ### Student Details
 
@@ -89,7 +87,7 @@ If the entry file in the folder has a different name, run that Python file inste
 
 Tic Tac Toe is a two-player game made using Python. The game uses a 3x3 board and two players take turns placing their symbols.
 
-One player uses `X` and the other uses `O`.
+One player uses X and the other uses O.
 
 ### Main Features
 
@@ -186,12 +184,6 @@ Check it using:
 python --version
 ```
 
-If that does not work on Windows, try:
-
-```bash
-py --version
-```
-
 ## 2. Clone the Repository
 
 Clone the repository using:
@@ -220,6 +212,12 @@ Then run:
 python main.py
 ```
 
+Then:
+
+```bash
+exit
+```
+
 For Tic Tac Toe:
 
 ```bash
@@ -229,6 +227,11 @@ Then run:
 
 ```bash
 python main.py
+```
+Then:
+
+```bash
+exit
 ```
 
 For College Event Management:
@@ -242,6 +245,7 @@ Then run:
 python main.py
 ```
 
+
 The exact command may need to be changed if the project's main Python file has a different filename.
 
 ---
@@ -253,7 +257,7 @@ The exact command may need to be changed if the project's main Python file has a
 
 ---
 
-## CSE1021 VITyarthi Project
+## VITyarthi Project
 
 **Student:** Aditya Kumar  
 **Registration Number:** 26BAI10114  
