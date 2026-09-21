@@ -1,6 +1,6 @@
 # College Event Management
 
-A Python application for managing college events and student registrations. As in our college every next day has an event, i have build this program to get help with storing event data as well as registered student data, It can be linked with a google form or deployed as a website to automate the registration process.
+A Python application for managing college events and student registrations. As in our college every next day has an event, i have built this program to get help with storing event data as well as registered student data, It can be linked with a google form or deployed as a website to automate the registration process.
 
 ## Functional Modules
 1. Event Management
@@ -50,5 +50,5 @@ END
 7. Tuples and dictionaries
 8. List methods
 9. Counting and maximum
-- Sorting
-- Modular Python programs
+10. Sorting
+11. Modular Python programs
