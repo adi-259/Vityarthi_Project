@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-A simple two-player Tic Tac Toe game written in Python and designed as a CSE1021 project.
+A simple two-player Tic Tac Toe game written in Python and designed for my Vityarthi Project.
 
 ## How to run
 
@@ -96,9 +96,9 @@ Show winner  Board full?
 2. Lists
 3. Functions
 4. Parameters and arguments
-5. `if`, `elif`, and `else`
-6. `while` loop
-7. `for` loop
+5. if, elif, and else
+6. while loop
+7. for loop
 8. Boolean expressions
 9. Operators
 10. Input and output
