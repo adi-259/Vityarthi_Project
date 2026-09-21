@@ -55,41 +55,6 @@ END WHILE
 STOP
 ```
 
-## Flowchart
-
-```text
-START
-  |
-  v
-Create empty board
-  |
-  v
-Set player = X
-  |
-  v
-Display board
-  |
-  v
-Input position
-  |
-  v
-Is position valid and empty?
-  | Yes                 | No
-  v                     v
-Place symbol       Show error
-  |
-  v
-Winner?
- | Yes       | No
- v           v
-Show winner  Board full?
-             | Yes       | No
-             v           v
-          Show draw   Switch player
-                         |
-                         +----> Display board
-```
-
 ## Main Concepts Used
 
 1. Variables and data types
