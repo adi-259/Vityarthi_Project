@@ -10,12 +10,12 @@ The project focuses on creating events, storing event details, managing student 
 College students, student event coordinators, faculty or club coordinators.
 
 ## High-Level Features
-- Create and store college events
-- Generate event IDs
-- Store event name and venue
-- Register students for events
-- Prevent duplicate registrations
-- Display available events and registration counts
-- Calculate total registrations
-- Find maximum registrations
-- Separate Python modules for event, registration and algorithm functionality
+1) Create and store college events
+2) Generate event IDs
+3) Store event name and venue
+4) Register students for events
+5) Prevent duplicate registrations
+6) Display available events and registration counts
+7) Calculate total registrations
+8) Find maximum registrations
+9) Separate Python modules for event, registration and algorithm functionality
