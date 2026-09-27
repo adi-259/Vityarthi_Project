@@ -12,9 +12,9 @@ Hi, I am **Aditya Kumar**, a first-year B.Tech CSE student at VIT Bhopal Univers
 <p align="center">
   <img src="https://www.image2url.com/r2/default/images/1789857328509-11b0d516-c1d7-4138-8c60-3e61c7258beb.jpg" width="170" alt="Aditya Kumar">
 </p>
-This repository contains the projects I made for my CSE VITyarthi course project. I used Python to build the applications and tried to apply the programming concepts that I have learned in my course in actual working projects.
+This repo contains the projects I made for my CSE VITyarthi project. I used Python to build the applications and tried to apply the programming concepts that I have learned in my course.
 
-### Student Details
+### My Details
 
 - **Name:** Aditya Kumar
 - **Registration Number:** 26BAI10114
@@ -54,8 +54,8 @@ The Quiz App is a simple Python-based quiz application. The user gets a set of q
 ### Python Concepts Used
 
 1. Variables
-2. `if`, `elif` and `else`
-3. `for` and `while` loops
+2. if, elif and else
+3. for and while loops
 4. Functions
 5. Lists
 6. Dictionaries
@@ -63,7 +63,6 @@ The Quiz App is a simple Python-based quiz application. The user gets a set of q
 8. Sets
 9. Random module
 10. Input validation
-11. Basic error handling
 
 ### How It Works
 
@@ -78,8 +77,6 @@ Open a terminal inside the Quiz App folder and run:
 ```bash
 python main.py
 ```
-
-If the entry file in the folder has a different name, run that Python file instead.
 
 ---
 
@@ -245,8 +242,11 @@ Then run:
 python main.py
 ```
 
+Then:
 
-The exact command may need to be changed if the project's main Python file has a different filename.
+```bash
+exit
+```
 
 ---
 
@@ -254,11 +254,4 @@ The exact command may need to be changed if the project's main Python file has a
 
 - **GitHub:** https://github.com/adi-259
 - **LinkedIn:** https://www.linkedin.com/in/aditya-kumar-30b9a4305/
-
----
-
-## VITyarthi Project
-
-**Student:** Aditya Kumar  
-**Registration Number:** 26BAI10114  
-**University:** VIT Bhopal University  
+ 
