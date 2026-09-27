@@ -10,12 +10,12 @@ The project covers a Python command-line quiz system with a 100+ question questi
 First-year engineering students, teachers or faculty, and students practicing Python fundamentals and algorithms.
 
 ## High-Level Features
-- 100+ question question bank
-- Random selection of unique questions for each attempt
-- Randomized quiz order
-- Multiple-choice questions
-- Automatic answer validation
-- Score calculation
-- Correct-answer counting
-- Algorithm support for maximum and sorting
-- Configurable number of questions per quiz
+1) 100+ question question bank
+2) Random selection of unique questions for each attempt
+3) Randomized quiz order
+4) Multiple-choice questions
+5) Automatic answer validation
+6) Score calculation
+7) Correct-answer counting
+8) Algorithm support for maximum and sorting
+9) Configurable number of questions per quiz
