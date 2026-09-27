@@ -1,6 +1,6 @@
 ## Quiz App
 
-A Python quiz app featuring a question bank of over 100 items, designed for integration into quiz platforms or websites to support exam preparation and general practice. While the current collection is modest, the developer plans to expand it with additional questions across various subjects.
+This Python quiz application offers a question bank of more than 100 items, making it well suited for embedding in quiz platforms or websites to help users prepare for exams and practice general knowledge.
 
 Let's see what it provides and how i made this and how to use it.
 
