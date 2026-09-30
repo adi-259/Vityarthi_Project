@@ -4,7 +4,7 @@
 Managing college events and student registrations manually can make it difficult to organize event details, track participants and view registration statistics. This project provides a simple Python-based system for storing events, registering students and generating basic event reports.
 
 ## Scope of the Project
-The project focuses on creating events, storing event details, managing student sign-ups, and preventing duplicate entries, along with generating basic reports on total and maximum registrations. Built entirely in Python without external libraries, it relies on core language features like lists, dictionaries, functions, and control flow structures.
+The whole project is about setting up events, saving the details, letting students sign up, and making sure nobody can register twice. It also spits out simple reports like total and max registrations. Everything's written in plain Python — no external libraries — so it's just lists, dicts, functions, and control flow doing all the work.
 
 ## Target Users
 College students, student event coordinators, faculty or club coordinators.
