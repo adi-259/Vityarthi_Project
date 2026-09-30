@@ -8,17 +8,18 @@ VIT Bhopal University
 
 ## About Me
 
-Hi, I am **Aditya Kumar**, a first-year B.Tech CSE student at VIT Bhopal University.
+Hi, I am **Aditya Kumar**, i am a first-year B.Tech CSE student at VIT Bhopal University.
+
 <p align="center">
   <img src="https://www.image2url.com/r2/default/images/1789857328509-11b0d516-c1d7-4138-8c60-3e61c7258beb.jpg" width="170" alt="Aditya Kumar">
 </p>
+
 This repo contains the projects I made for my CSE VITyarthi project. I used Python to build the applications and tried to apply the programming concepts that I have learned in my course.
 
 ### My Details
 
 - **Name:** Aditya Kumar
 - **Registration Number:** 26BAI10114
-- **University:** VIT Bhopal University
 - **GitHub:** [adi-259](https://github.com/adi-259)
 - **LinkedIn:** [Aditya Kumar](https://www.linkedin.com/in/aditya-kumar-30b9a4305/)
 
@@ -32,13 +33,13 @@ There are three projects in this repository:
 2. **Tic Tac Toe**
 3. **College Event Management System**
 
-I selected these projects because they cover different types of programming problems. The Quiz App focuses more on questions, answers and score calculation. Tic Tac Toe focuses on game logic. The College Event Management project focuses on storing and managing information.
+I selected these projects because they cover different types of programming problems. The Quiz App focuses more on questions, answers and score calculation. Tic Tac Toe focuses on game logic.The College Event Management project is usedfor storing and managing information.
 
 ---
 
 ## 1. Quiz App
 
-The Quiz App is a simple Python-based quiz application. The user gets a set of questions and selects an answer for each question. At the end, the application calculates the score and shows the result.
+The Quiz App is a simple Python-based application. We gets a set of questions and selects an answer for each question. The application calculates the score and then shows the result.
 
 ### Main Features
 
@@ -66,9 +67,9 @@ The Quiz App is a simple Python-based quiz application. The user gets a set of q
 
 ### How It Works
 
-The program starts by loading the questions. Questions can be presented in a random order so that the quiz is not exactly the same every time.
+The program starts by giving a questions. Questions is presented in a random order such that the quiz is not exactly same every time.
 
-The user selects an option for each question. The program checks the answer and updates the score. After all questions are completed, the final score and performance are displayed.
+The user selects an option for each question. The program checks answer and updates the score. Then, the final score and performance are displayed.
 
 ### Run the Project
 
@@ -109,15 +110,11 @@ Restart/new game option
 
 ### How It Works
 
-The program first creates an empty 3x3 board. Players take turns choosing an available position.
-
-After every move, the program checks the rows, columns and diagonals to see if a player has won.
-
-If all positions are filled and nobody wins, the game ends as a draw.
+The program creates an empty 3x3 board. Each Player take turns choosing an available position. Then, the program checks rows, columns and diagonals to see if any player has won. If all the positions are filled and nobody wins, the game ends with a draw.
 
 ### Run the Project
 
-Open a terminal inside the Tic Tac Toe folder and run:
+Open a terminal inside the Tic Tac Toe folder and then run:
 
 ```bash
 python main.py
@@ -156,7 +153,7 @@ Modular programming
 
 The application stores information about college events and their participants. Users can view events and register students for suitable events.
 
-The program checks the entered information before accepting it so that incorrect or duplicate entries can be handled properly.
+Before accepting the input, the program validates the entered information so that erroneous or duplicate entries can be dealt with appropriately.
 
 ### Run the Project
 
@@ -169,11 +166,9 @@ python main.py
 ---
 
 
-# How to Run the Projects
+# How to Run Projects
 
 ## 1. Install Python
-
-First, make sure Python 3 is installed.
 
 Check it using:
 
