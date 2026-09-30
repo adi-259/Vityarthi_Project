@@ -20,13 +20,13 @@ The board positions are:
  7 | 8 | 9
 ```
 
-1. Player **X** starts.
-2. Player **O** plays second.
-3. Enter a position from **1 to 9**.
-4. A player wins when they occupy three positions in a row, column, or diagonal.
-5. If all nine positions are filled without a winner, the game is a draw.
-6. After each round, choose `Y` to play again or `N` to exit.
-
+1. Player X takes the first turn.
+2. Player O follows as the second player.
+3. Pick your lucky digits from 1 to 9 like you’re defusing a bomb with numbers.
+4. Line up three of your chosen digits in a row, column, or diagonal—boom, you win!
+5. If the board fills up and nobody won, congratulations, it’s a tie.
+6. After each round, hit Y to keep the chaos going or N to escape before it gets weird.
+   
 ## Pseudocode - Game Loop
 
 ```text
