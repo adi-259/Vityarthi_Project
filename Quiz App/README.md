@@ -44,5 +44,3 @@ END FOR
 Display final score and correct-answer count
 END
 ```
-## Project Coverage
-Control flow, functions, Boolean values/operators, lists, tuples, sets, dictionaries, list operations, randomization, GCD, prime numbers/factors, Fibonacci, powers, pseudocode, flowcharts and basic algorithm analysis.
