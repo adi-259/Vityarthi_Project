@@ -2,12 +2,11 @@
 
 ## Problem Statement
 
-Tic Tac Toe is a simple two-player game, but developing it in Python requires applying programming concepts such as lists, functions, conditional statements, loops, Boolean conditions, input validation, and algorithmic decision making.
+Tic Tac Toe might look like a breeze to play, but building it in Python actually puts a bunch of core coding skills to the test. You’ll get to flex your skills with lists, functions, loops, and conditional logic, while also getting hands-on with input validation and algorithmic thinking.
 
 ## Scope of the Project
 
-The project covers a 3×3 two-player Tic Tac Toe game. Players take turns placing X and O on the board. The system accepts player input, validates moves, updates the board, checks winning combinations, detects a draw, and displays the final result.
-
+Basically, it’s a classic 3×3 Tic Tac Toe game for two players. You take turns dropping X’s and O’s onto the grid, the game makes sure your moves are valid, updates the board, watches for a win or a tie, and then tells you who took the crown.
 
 ## High-Level Features
 
